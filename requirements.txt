@@ -1,0 +1,6 @@
+yt_dlp
+librosa
+soundfile
+noisereduce
+moviepy
+numpy
