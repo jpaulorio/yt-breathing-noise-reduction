@@ -73,11 +73,12 @@ The short-time energy (STE) is used to quantify how much "power" or "energy" exi
 The short-time energy (STE) is used to quantify how much "power" or "energy" exists in short segments of the audio signal. This calculation helps in identifying segments that might represent soft sounds like breathing.
 
 #### Formula:
-\[ E[n] = \sum_{m=0}^{N-1} |x[m + n]|^2 \]
-
-- **\( E[n] \)**: Energy of the segment starting at sample \( n \).
-- **\( x[m + n] \)**: Amplitude of the audio signal at sample \( m + n \).
-- **\( N \)**: Window size (number of samples).
+```math
+E[n] = \sum_{m=0}^{N-1} |x[m + n]|^2
+```
+- **$E[n]$**: Energy of the segment starting at sample \( n \).
+- **$x[m + n]$**: Amplitude of the audio signal at sample \( m + n \).
+- **$N$**: Window size (number of samples).
 
 3. Windowing the Audio Signal:
 Window Size (window_size): Determines how many samples are analyzed in each energy calculation. A typical window size (e.g., 2048 samples) is used to capture short bursts of sound while preserving enough detail to differentiate between noises and speech.
